@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="images"></div>
+  <div class="spacer"></div>
+  <div>
+
+  </div>
+  <div class="tools">
+    <button class="rect" onclick="selectAll()">Select All</button>
+    <button class="rect" onclick="deselectAll()">Deselect All</button>
+  </div>
+  <div class="row"><button class="square" onclick="press(0)" id="0">0</button>
+
+<button class="square" onclick="press(1)" id="1">1</button>
+
+<button class="square" onclick="press(2)" id="2">2</button>
+
+<button class="square" onclick="press(3)" id="3">3</button>
+
+<button class="square" onclick="press(4)" id="4">4</button>
+
+<button class="square" onclick="press(5)" id="5">5</button>
+
+<button class="square" onclick="press(6)" id="6">6</button>
+
+<button class="square" onclick="press(7)" id="7">7</button>
+
+<button class="square" onclick="press(8)" id="8">8</button>
+
+<button class="square" onclick="press(9)" id="9">9</button>
+
+<button class="square" onclick="press(10)" id="10">10</button>
+
+<button class="square" onclick="press(11)" id="11">11</button>
+
+<button class="square" onclick="press(12)" id="12">12</button>
+
+<button class="square" onclick="press(13)" id="13">13</button>
+
+<button class="square" onclick="press(14)" id="14">14</button>
+
+<button class="square" onclick="press(15)" id="15">15</button>
+
+<button class="square" onclick="press(16)" id="16">16</button>
+
+<button class="square" onclick="press(17)" id="17">17</button>
+
+<button class="square" onclick="press(18)" id="18">18</button>
+
+<button class="square" onclick="press(19)" id="19">19</button>
+
+<button class="square" onclick="press(20)" id="20">20</button>
+
+<button class="square" onclick="press(21)" id="21">21</button>
+
+<button class="square" onclick="press(22)" id="22">22</button>
+
+<button class="square" onclick="press(23)" id="23">23</button>
+
+<button class="square" onclick="press(24)" id="24">24</button>
+
+<button class="square" onclick="press(25)" id="25">25</button>
+
+<button class="square" onclick="press(26)" id="26">26</button>
+
+<button class="square" onclick="press(27)" id="27">27</button>
+
+<button class="square" onclick="press(28)" id="28">28</button>
+
+<button class="square" onclick="press(29)" id="29">29</button>
+
+<button class="square" onclick="press(30)" id="30">30</button>
+
+<button class="square" onclick="press(31)" id="31">31</button>
+
+<button class="square" onclick="press(32)" id="32">32</button>
+
+<button class="square" onclick="press(33)" id="33">33</button>
+
+<button class="square" onclick="press(34)" id="34">34</button>
+
+<button class="square" onclick="press(35)" id="35">35</button>
+
+<button class="square" onclick="press(36)" id="36">36</button>
+
+<button class="square" onclick="press(37)" id="37">37</button>
+
+<button class="square" onclick="press(38)" id="38">38</button>
+
+<button class="square" onclick="press(39)" id="39">39</button>
+
+<button class="square" onclick="press(40)" id="40">40</button>
+
+<button class="square" onclick="press(41)" id="41">41</button>
+
+<button class="square" onclick="press(42)" id="42">42</button>
+
+<button class="square" onclick="press(43)" id="43">43</button>
+
+<button class="square" onclick="press(44)" id="44">44</button>
+
+<button class="square" onclick="press(45)" id="45">45</button>
+
+<button class="square" onclick="press(46)" id="46">46</button>
+
+<button class="square" onclick="press(47)" id="47">47</button>
+
+<button class="square" onclick="press(48)" id="48">48</button>
+
+<button class="square" onclick="press(49)" id="49">49</button>
+
+<button class="square" onclick="press(50)" id="50">50</button>
+
+<button class="square" onclick="press(51)" id="51">51</button>
+
+<button class="square" onclick="press(52)" id="52">52</button>
+
+<button class="square" onclick="press(53)" id="53">53</button>
+
+<button class="square" onclick="press(54)" id="54">54</button>
+
+<button class="square" onclick="press(55)" id="55">55</button>
+
+<button class="square" onclick="press(56)" id="56">56</button>
+
+<button class="square" onclick="press(57)" id="57">57</button>
+
+<button class="square" onclick="press(58)" id="58">58</button>
+
+<button class="square" onclick="press(59)" id="59">59</button>
+
+<button class="square" onclick="press(60)" id="60">60</button>
+
+<button class="square" onclick="press(61)" id="61">61</button>
+
+<button class="square" onclick="press(62)" id="62">62</button>
+
+<button class="square" onclick="press(63)" id="63">63</button>
+
+<button class="square" onclick="press(64)" id="64">64</button>
+
+<button class="square" onclick="press(65)" id="65">65</button>
+
+<button class="square" onclick="press(66)" id="66">66</button>
+
+<button class="square" onclick="press(67)" id="67">67</button>
+
+<button class="square" onclick="press(68)" id="68">68</button>
+  </div>
+  <div class="spacerr"></div>
+  <div class="grey">
+    <div class="buttons">
+        <button class="rect" onclick="addFrame()">Add Frame</button>
+        <button class="rect" onclick="removeFrame()">Decrease Frame</button>
+        <button class="rect" onclick="copyFrame()">Copy Frame</button>
+        <button class="rect" onclick="pasteFrame()">Paste Frame</button>
+        <button class="rect" onclick="playButton()" id="playBtn">Play</button>
+    </div>
+    <div id="frames"></div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>

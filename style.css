@@ -1,0 +1,45 @@
+body {
+  font-size: 1rem;
+  color: white;
+  background-color: black;
+}
+
+.overlap {
+  position: absolute;
+}
+
+.spacer {
+    padding: 540px;
+}
+
+.grey {
+    background-color:darkgray;
+}
+
+.square {
+  height: 90px;
+  width: 90px;
+  background-color: black;
+  color: white;
+  font-size: 3rem;
+  border: 10px solid white;
+  border-radius: 20px;
+}
+
+.square:hover {
+    border-color: green;
+}
+
+.rect {
+  height: 90px;
+  color: white;
+  font-size: 3rem;
+  border: 10px solid white;
+  background-color: black;
+  border-radius: 20px;
+}
+
+.rect:hover {
+    color: black;
+    background-color: white;
+}
