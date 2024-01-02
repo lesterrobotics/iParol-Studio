@@ -4,12 +4,15 @@ body {
   background-color: black;
 }
 
+
+
 .overlap {
   position: absolute;
 }
 
 .spacer {
-    padding: 540px;
+    padding-top: 30%;
+    margin: auto;
 }
 
 .grey {
@@ -17,13 +20,13 @@ body {
 }
 
 .square {
-  height: 90px;
-  width: 90px;
+  height: 45px;
+  width: 45px;
   background-color: black;
   color: white;
-  font-size: 3rem;
-  border: 10px solid white;
-  border-radius: 20px;
+  font-size: 1rem;
+  border: 5px solid white;
+  border-radius: 10px;
 }
 
 .square:hover {
@@ -31,15 +34,19 @@ body {
 }
 
 .rect {
-  height: 90px;
+  height: 45px;
   color: white;
-  font-size: 3rem;
-  border: 10px solid white;
+  font-size: 1rem;
+  border: 5px solid white;
   background-color: black;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 .rect:hover {
     color: black;
-    background-color: white;
+    background-color: green;
+}
+
+.text {
+  font-size: 1rem
 }
