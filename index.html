@@ -4,18 +4,16 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>HTML</title>
+  <title>iParol Studio</title>
   <link rel="stylesheet" href="style.css">
+  <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
 </head>
 <body>
   <div id="images"></div>
   <div class="spacer"></div>
-  <div>
-
-  </div>
   <div class="tools">
-    <button class="rect" onclick="selectAll()">Select All</button>
-    <button class="rect" onclick="deselectAll()">Deselect All</button>
+    <button class="rect" onclick="selectAll()" id="selectAllBtn">Select All</button>
+    <button class="rect" onclick="deselectAll()" id="deselectAllBtn">Deselect All</button>
   </div>
   <div class="row"><button class="square" onclick="press(0)" id="0">0</button>
 
@@ -158,14 +156,20 @@
   <div class="spacerr"></div>
   <div class="grey">
     <div class="buttons">
-        <button class="rect" onclick="addFrame()">Add Frame</button>
-        <button class="rect" onclick="removeFrame()">Decrease Frame</button>
-        <button class="rect" onclick="copyFrame()">Copy Frame</button>
-        <button class="rect" onclick="pasteFrame()">Paste Frame</button>
+        <button class="rect" onclick="addFrame()" id="addFrameBtn">Add Frame</button>
+        <button class="rect" onclick="removeFrame()" id="removeFrameBtn">Decrease Frame</button>
+        <button class="rect" onclick="copyFrame()" id="copyFrameBtn">Copy Frame</button>
+        <button class="rect" onclick="pasteFrame()" id="pasteFrameBtn">Paste Frame</button>
         <button class="rect" onclick="playButton()" id="playBtn">Play</button>
     </div>
     <div id="frames"></div>
   </div>
+  <div id="arduinoProgram">
+    <button class="rect" id="generateCode" pys-onClick="generateCode">Generate Arduino Code</button>
+    <button class="rect" id="copyCode" onClick="copyCode()">Copy Arduino Code</button>
+    <code class="text" id="arduinoCode"><br>Code will be generated here...</code>
+  </div>
   <script src="main.js"></script>
+  <py-script src="main.py"></py-script>
 </body>
 </html>
