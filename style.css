@@ -4,8 +4,6 @@ body {
   background-color: black;
 }
 
-
-
 .overlap {
   position: absolute;
 }
@@ -50,3 +48,8 @@ body {
 .text {
   font-size: 1rem
 }
+
+@media (max-width: 700px) {
+  .spacer {
+      padding-top: 100%
+  }
