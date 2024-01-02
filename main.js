@@ -11,8 +11,7 @@ for (i = 0; i < 69; i++) {
       images[i] = new Image()
       images[i].style.position = "absolute"
       images[i].src = "frames/frame_000"+i+".png"
-      images[i].style.visibility = "hidden"
-      images[i].style.height = "500px"
+      images[i].style.visibility = "hidden"
       images[i].style.height = "50%"
       document.getElementById("images").appendChild(images[i])
     }
