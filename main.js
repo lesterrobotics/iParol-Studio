@@ -94,6 +94,7 @@ function addFrame() {
 }
 
 function removeFrame() {
+  if (frames.length == 2) return
   if (currentFrame == btns.length) moveTo(btns.length-1)
   frames.pop()
   btns[btns.length-1].remove()
