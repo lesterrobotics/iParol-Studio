@@ -2,6 +2,8 @@ function getDelayValue() {
     return document.getElementById("delayInput").value
 }
 
+document.getElementById("delayInput").value = 83.33
+
 var images = []
 for (i = 0; i < 69; i++) {
     if (i <= 9) {
