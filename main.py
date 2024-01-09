@@ -13,6 +13,7 @@ def generateCode(e):
     Element("arduinoCode").element.innerText = arduinoCode
 
 def generate_digital_write_statements(frames):
+    delay = Element("delayInput").element.value
     all_statements = []
 
     for i in range(len(frames) - 1):
@@ -25,7 +26,7 @@ def generate_digital_write_statements(frames):
         all_statements.extend(high_statements)
 
         # Add delay
-        all_statements.append('delay(83.33);')
+        all_statements.append(f'delay({delay});')
 
         # Set pins to LOW in the next frame if not present
         low_statements = [f'digitalWrite({pin}, LOW);' for pin in current_frame if pin not in next_frame]
