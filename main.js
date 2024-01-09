@@ -1,3 +1,7 @@
+function getDelayValue() {
+    return document.getElementById("delayInput").value
+}
+
 var images = []
 for (i = 0; i < 69; i++) {
     if (i <= 9) {
@@ -140,7 +144,7 @@ function playButton() {
         counter = 1
       }
       moveTo(counter)
-    }, 83.33)
+    }, getDelayValue())
     playBtn.innerText = "Stop"
     disableButtons()
   } else {
