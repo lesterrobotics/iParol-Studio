@@ -1,1 +1,218 @@
-var _0x1fe097=_0x4aeb;(function(_0x9e19fd,_0x38ec8f){var _0x346b37=_0x4aeb,_0x176096=_0x9e19fd();while(!![]){try{var _0xd985af=parseInt(_0x346b37(0x15e))/0x1*(-parseInt(_0x346b37(0x166))/0x2)+-parseInt(_0x346b37(0x13e))/0x3+parseInt(_0x346b37(0x14d))/0x4+-parseInt(_0x346b37(0x142))/0x5*(parseInt(_0x346b37(0x13f))/0x6)+parseInt(_0x346b37(0x161))/0x7*(parseInt(_0x346b37(0x136))/0x8)+parseInt(_0x346b37(0x14c))/0x9+-parseInt(_0x346b37(0x16e))/0xa*(-parseInt(_0x346b37(0x157))/0xb);if(_0xd985af===_0x38ec8f)break;else _0x176096['push'](_0x176096['shift']());}catch(_0x472b4e){_0x176096['push'](_0x176096['shift']());}}}(_0x9e2e,0x6587e));function getDelayValue(){var _0x4d6925=_0x4aeb;return document[_0x4d6925(0x151)](_0x4d6925(0x13a))[_0x4d6925(0x153)];}document[_0x1fe097(0x151)]('delayInput')[_0x1fe097(0x153)]=83.33;var images=[];for(i=0x0;i<0x45;i++){i<=0x9?(images[i]=new Image(),images[i][_0x1fe097(0x15c)][_0x1fe097(0x14b)]=_0x1fe097(0x162),images[i][_0x1fe097(0x16d)]='frames/frame_0000'+i+_0x1fe097(0x172),images[i][_0x1fe097(0x15c)]['visibility']=_0x1fe097(0x13d),images[i][_0x1fe097(0x15c)][_0x1fe097(0x14f)]=_0x1fe097(0x137),document[_0x1fe097(0x151)](_0x1fe097(0x15f))[_0x1fe097(0x168)](images[i])):(images[i]=new Image(),images[i]['style'][_0x1fe097(0x14b)]=_0x1fe097(0x162),images[i][_0x1fe097(0x16d)]=_0x1fe097(0x169)+i+_0x1fe097(0x172),images[i][_0x1fe097(0x15c)]['visibility']=_0x1fe097(0x13d),images[i][_0x1fe097(0x15c)][_0x1fe097(0x14f)]=_0x1fe097(0x137),document['getElementById'](_0x1fe097(0x15f))[_0x1fe097(0x168)](images[i]));}function press(_0x4bc20c){var _0x3f62ac=_0x1fe097,_0x33b6cf=document[_0x3f62ac(0x151)](_0x4bc20c);images[_0x4bc20c]['style']['visibility']==_0x3f62ac(0x13d)?(images[_0x4bc20c][_0x3f62ac(0x15c)][_0x3f62ac(0x138)]='visible',_0x33b6cf['style'][_0x3f62ac(0x139)]='green'):(images[_0x4bc20c]['style'][_0x3f62ac(0x138)]=_0x3f62ac(0x13d),_0x33b6cf[_0x3f62ac(0x15c)][_0x3f62ac(0x139)]=_0x3f62ac(0x158));}function selectAll(){var _0x3cc372=_0x1fe097;for(i=0x0;i<=0x44;i++){images[i][_0x3cc372(0x15c)][_0x3cc372(0x138)]=_0x3cc372(0x16b),document[_0x3cc372(0x151)](''+i)[_0x3cc372(0x15c)][_0x3cc372(0x139)]=_0x3cc372(0x13c);}}function deselectAll(){var _0x3b4678=_0x1fe097;for(i=0x0;i<=0x44;i++){images[i][_0x3b4678(0x15c)]['visibility']=_0x3b4678(0x13d),document[_0x3b4678(0x151)](''+i)[_0x3b4678(0x15c)][_0x3b4678(0x139)]=_0x3b4678(0x158);}}var div=document[_0x1fe097(0x151)](_0x1fe097(0x144)),frames=[[]],btns=[],currentFrame=0x1;function saveFrame(_0x774c57){var _0x39fc7c=_0x1fe097;frames[_0x774c57]=[];for(i=0x0;i<=0x44;i++){images[i][_0x39fc7c(0x15c)][_0x39fc7c(0x138)]==_0x39fc7c(0x16b)&&(frames[_0x774c57][_0x39fc7c(0x163)](i),press(i));}}function moveTo(_0x54f01d){var _0x455e79=_0x1fe097;saveFrame(currentFrame),document[_0x455e79(0x151)](currentFrame+'f')[_0x455e79(0x15c)][_0x455e79(0x139)]='black',currentFrame=_0x54f01d,document['getElementById'](currentFrame+'f')['style'][_0x455e79(0x139)]='green',console['log'](frames[_0x54f01d]);if(frames[_0x54f01d]['length']!=0x0)for(i=0x0;i<frames[_0x54f01d][_0x455e79(0x145)];i++){press(frames[_0x54f01d][i]);}else console[_0x455e79(0x14e)](_0x455e79(0x156));console['log'](_0x455e79(0x147)+_0x54f01d+_0x455e79(0x15d)),console[_0x455e79(0x14e)](frames);}function addFrame(){var _0x334352=_0x1fe097,_0x50ceac=document[_0x334352(0x150)](_0x334352(0x170));_0x50ceac[_0x334352(0x143)]=btns[_0x334352(0x145)]+0x1,_0x50ceac['id']=btns[_0x334352(0x145)]+0x1+'f';btns[_0x334352(0x145)]+0x1<=0x63?_0x50ceac[_0x334352(0x155)]=_0x334352(0x15b):_0x50ceac[_0x334352(0x155)]=_0x334352(0x146);var _0x1992e4=btns[_0x334352(0x145)]+0x1;_0x50ceac['onclick']=function(){moveTo(_0x1992e4);},btns[_0x334352(0x163)](_0x50ceac),document[_0x334352(0x151)]('frames')[_0x334352(0x168)](btns[btns[_0x334352(0x145)]-0x1]),frames[_0x334352(0x163)]([]),console[_0x334352(0x14e)](btns),moveTo(btns[_0x334352(0x145)]);}function _0x4aeb(_0x5dd5d5,_0x4490d1){var _0x9e2e1f=_0x9e2e();return _0x4aeb=function(_0x4aeb1c,_0x53b590){_0x4aeb1c=_0x4aeb1c-0x136;var _0x2b0b18=_0x9e2e1f[_0x4aeb1c];return _0x2b0b18;},_0x4aeb(_0x5dd5d5,_0x4490d1);}function removeFrame(){var _0x576b72=_0x1fe097;if(frames[_0x576b72(0x145)]==0x2)return;if(currentFrame==btns[_0x576b72(0x145)])moveTo(btns[_0x576b72(0x145)]-0x1);frames[_0x576b72(0x174)](),btns[btns['length']-0x1]['remove'](),btns[_0x576b72(0x174)]();}function _0x9e2e(){var _0x25fa05=['appendChild','frames/frame_000','Copied\x20Frame\x20','visible','copyFrameBtn','src','489680FEmqmB','generateCode','button','writeText','.png','Stop','pop','435088pbAXOd','50%','visibility','backgroundColor','delayInput','arduinoCode','green','hidden','277320BNEFTE','48aQRPQV','Pasted\x20Successfully!','clipboard','24670reVKLC','textContent','frames','length','rect','Frame\x20','color','selectAllBtn','deselectAllBtn','position','751401uTmuFV','2080696SVnUxa','log','height','createElement','getElementById','removeFrameBtn','value','grey','className','This\x20frame\x20is\x20empty...','33fUPpsV','black','borderColor','disabled','square','style','\x20selected...','1BOwbvW','images','white','7nXAAoV','absolute','push','playBtn','pasteFrameBtn','514342JPBKxE','addFrameBtn'];_0x9e2e=function(){return _0x25fa05;};return _0x9e2e();}var clipboard=[];function copyFrame(){var _0x42c152=_0x1fe097;frames[currentFrame]=[];for(i=0x0;i<=0x44;i++){images[i][_0x42c152(0x15c)][_0x42c152(0x138)]==_0x42c152(0x16b)&&frames[currentFrame][_0x42c152(0x163)](i);}clipboard=frames[currentFrame],console[_0x42c152(0x14e)](_0x42c152(0x16a)+currentFrame+':\x20'+clipboard);}function pasteFrame(){var _0x56b700=_0x1fe097;frames[currentFrame]=clipboard,deselectAll();if(frames[currentFrame]['length']!=0x0)for(i=0x0;i<frames[currentFrame][_0x56b700(0x145)];i++){press(frames[currentFrame][i]);}console[_0x56b700(0x14e)](_0x56b700(0x140));}var counter=0x1,playing=![],player=NaN,playBtn=document[_0x1fe097(0x151)](_0x1fe097(0x164));function playButton(){var _0x5483e7=_0x1fe097;!playing?(playing=!![],counter=currentFrame,player=setInterval(()=>{var _0x271a12=_0x4aeb;counter++,counter==frames[_0x271a12(0x145)]&&(counter=0x1),moveTo(counter);},getDelayValue()),playBtn['innerText']=_0x5483e7(0x173),disableButtons()):(playing=![],clearInterval(player),playBtn['innerText']='Play',enableButtons());}function disableButtons(){var _0x31e482=_0x1fe097;document[_0x31e482(0x151)]('selectAllBtn')[_0x31e482(0x15a)]=!![],document[_0x31e482(0x151)](_0x31e482(0x149))[_0x31e482(0x15c)][_0x31e482(0x148)]=_0x31e482(0x154),document[_0x31e482(0x151)](_0x31e482(0x149))[_0x31e482(0x15c)][_0x31e482(0x159)]=_0x31e482(0x154),document[_0x31e482(0x151)](_0x31e482(0x14a))[_0x31e482(0x15a)]=!![],document[_0x31e482(0x151)](_0x31e482(0x14a))['style'][_0x31e482(0x148)]=_0x31e482(0x154),document['getElementById'](_0x31e482(0x14a))[_0x31e482(0x15c)][_0x31e482(0x159)]=_0x31e482(0x154),document['getElementById'](_0x31e482(0x167))[_0x31e482(0x15a)]=!![],document[_0x31e482(0x151)]('addFrameBtn')['style'][_0x31e482(0x148)]='grey',document['getElementById'](_0x31e482(0x167))[_0x31e482(0x15c)][_0x31e482(0x159)]=_0x31e482(0x154),document[_0x31e482(0x151)](_0x31e482(0x152))['disabled']=!![],document[_0x31e482(0x151)]('removeFrameBtn')[_0x31e482(0x15c)]['color']=_0x31e482(0x154),document['getElementById'](_0x31e482(0x152))[_0x31e482(0x15c)][_0x31e482(0x159)]=_0x31e482(0x154),document[_0x31e482(0x151)](_0x31e482(0x16c))['disabled']=!![],document['getElementById']('copyFrameBtn')[_0x31e482(0x15c)][_0x31e482(0x148)]=_0x31e482(0x154),document['getElementById'](_0x31e482(0x16c))[_0x31e482(0x15c)][_0x31e482(0x159)]=_0x31e482(0x154),document[_0x31e482(0x151)](_0x31e482(0x165))[_0x31e482(0x15a)]=!![],document[_0x31e482(0x151)](_0x31e482(0x165))['style'][_0x31e482(0x148)]=_0x31e482(0x154),document[_0x31e482(0x151)]('pasteFrameBtn')['style'][_0x31e482(0x159)]=_0x31e482(0x154),document[_0x31e482(0x151)](_0x31e482(0x16f))[_0x31e482(0x15a)]=!![],document[_0x31e482(0x151)](_0x31e482(0x16f))[_0x31e482(0x15c)][_0x31e482(0x148)]='grey',document[_0x31e482(0x151)]('generateCode')['style'][_0x31e482(0x159)]='grey';}function enableButtons(){var _0x3c2960=_0x1fe097;document[_0x3c2960(0x151)]('selectAllBtn')[_0x3c2960(0x15a)]=![],document['getElementById'](_0x3c2960(0x149))[_0x3c2960(0x15c)][_0x3c2960(0x148)]=_0x3c2960(0x160),document[_0x3c2960(0x151)](_0x3c2960(0x149))[_0x3c2960(0x15c)]['borderColor']=_0x3c2960(0x160),document[_0x3c2960(0x151)](_0x3c2960(0x14a))[_0x3c2960(0x15a)]=![],document[_0x3c2960(0x151)](_0x3c2960(0x14a))[_0x3c2960(0x15c)][_0x3c2960(0x148)]=_0x3c2960(0x160),document[_0x3c2960(0x151)](_0x3c2960(0x14a))[_0x3c2960(0x15c)][_0x3c2960(0x159)]=_0x3c2960(0x160),document[_0x3c2960(0x151)](_0x3c2960(0x167))['disabled']=![],document[_0x3c2960(0x151)](_0x3c2960(0x167))[_0x3c2960(0x15c)][_0x3c2960(0x148)]=_0x3c2960(0x160),document[_0x3c2960(0x151)](_0x3c2960(0x167))[_0x3c2960(0x15c)][_0x3c2960(0x159)]='white',document[_0x3c2960(0x151)](_0x3c2960(0x152))[_0x3c2960(0x15a)]=![],document[_0x3c2960(0x151)](_0x3c2960(0x152))[_0x3c2960(0x15c)][_0x3c2960(0x148)]='white',document[_0x3c2960(0x151)](_0x3c2960(0x152))['style'][_0x3c2960(0x159)]='white',document[_0x3c2960(0x151)]('copyFrameBtn')['disabled']=![],document[_0x3c2960(0x151)](_0x3c2960(0x16c))[_0x3c2960(0x15c)]['color']=_0x3c2960(0x160),document[_0x3c2960(0x151)](_0x3c2960(0x16c))[_0x3c2960(0x15c)][_0x3c2960(0x159)]=_0x3c2960(0x160),document[_0x3c2960(0x151)](_0x3c2960(0x165))[_0x3c2960(0x15a)]=![],document[_0x3c2960(0x151)](_0x3c2960(0x165))['style'][_0x3c2960(0x148)]='white',document[_0x3c2960(0x151)](_0x3c2960(0x165))['style'][_0x3c2960(0x159)]=_0x3c2960(0x160),document[_0x3c2960(0x151)](_0x3c2960(0x16f))[_0x3c2960(0x15a)]=![],document[_0x3c2960(0x151)]('generateCode')[_0x3c2960(0x15c)][_0x3c2960(0x148)]=_0x3c2960(0x160),document[_0x3c2960(0x151)](_0x3c2960(0x16f))[_0x3c2960(0x15c)][_0x3c2960(0x159)]=_0x3c2960(0x160);}addFrame(),moveTo(0x1),selectAll(),deselectAll();var generateCodeButton=document[_0x1fe097(0x151)](_0x1fe097(0x16f));function copyCode(){var _0x32a96a=_0x1fe097;navigator[_0x32a96a(0x141)][_0x32a96a(0x171)](document[_0x32a96a(0x151)](_0x32a96a(0x13b))['innerText']),console[_0x32a96a(0x14e)]('text\x20copied');}
+function getDelayValue() {
+    return document.getElementById("delayInput").value
+}
+
+var images = []
+for (i = 0; i < 69; i++) {
+    if (i <= 9) {
+      images[i] = new Image()
+      images[i].style.position = "absolute"
+      images[i].src = "frames/frame_0000"+i+".png"
+      images[i].style.visibility = "hidden"
+      images[i].style.height = "50%"
+      document.getElementById("images").appendChild(images[i])
+    } else {
+      images[i] = new Image()
+      images[i].style.position = "absolute"
+      images[i].src = "frames/frame_000"+i+".png"
+      images[i].style.visibility = "hidden"
+
+      images[i].style.height = "50%"
+      document.getElementById("images").appendChild(images[i])
+    }
+}
+
+function press(pin) {
+  var p = document.getElementById(pin)
+  if (images[pin].style.visibility == "hidden") {
+    images[pin].style.visibility = "visible"
+    p.style.backgroundColor = "green"
+  } else {
+    images[pin].style.visibility = "hidden"
+    p.style.backgroundColor = "black"
+  }
+}
+
+function selectAll() {
+  for (i = 0; i <= 68; i++) {
+    images[i].style.visibility = "visible"
+    document.getElementById(""+i).style.backgroundColor = "green"
+  }
+}
+
+function deselectAll() {
+  for (i = 0; i <= 68; i++) {
+    images[i].style.visibility = "hidden"
+    document.getElementById(""+i).style.backgroundColor = "black"
+  }
+}
+
+//  0 = buttons
+var div = document.getElementById("frames")
+var frames = [[]]
+var btns = []
+var currentFrame = 1
+
+function saveFrame(_currentFrame) {
+  frames[_currentFrame] = []
+  for (i = 0; i <= 68; i++) {
+    if (images[i].style.visibility == "visible") {
+      frames[_currentFrame].push(i)
+      press(i)
+    }
+  }
+}
+
+function moveTo(_frame) {
+  saveFrame(currentFrame)
+  document.getElementById(currentFrame+"f").style.backgroundColor = "black"
+  currentFrame = _frame
+  document.getElementById(currentFrame+"f").style.backgroundColor = "green"
+  console.log(frames[_frame])
+  if (frames[_frame].length != 0) {
+    for (i = 0; i < frames[_frame].length; i++) {
+      press(frames[_frame][i])
+    }
+  } else {
+    console.log("This frame is empty...")
+  }
+  console.log("Frame "+_frame+" selected...")
+  console.log(frames)
+}
+
+function addFrame() {
+  var newBtn = document.createElement("button")
+  newBtn.textContent = btns.length + 1
+  newBtn.id = btns.length + 1 + "f"
+  if (btns.length + 1 <= 99) {
+    newBtn.className = "square"
+  } else {
+    newBtn.className = "rect"
+  }
+  var temp = btns.length + 1
+  newBtn.onclick = function() {moveTo(temp)}
+  btns.push(newBtn)
+  document.getElementById("frames").appendChild(btns[btns.length - 1])
+  frames.push([])
+  console.log(btns)
+  moveTo(btns.length)
+}
+
+function removeFrame() {
+  if (frames.length == 2) return
+  if (currentFrame == btns.length) moveTo(btns.length-1)
+  frames.pop()
+  btns[btns.length-1].remove()
+  btns.pop()
+  
+}
+
+var clipboard = []
+
+function copyFrame() {frames[currentFrame] = []
+  for (i = 0; i <= 68; i++) {
+    if (images[i].style.visibility == "visible") {
+      frames[currentFrame].push(i)
+    }
+  }
+  clipboard = frames[currentFrame]
+  console.log("Copied Frame "+currentFrame+": "+clipboard)
+}
+
+function pasteFrame() {
+  frames[currentFrame] = clipboard
+  deselectAll();
+  if (frames[currentFrame].length != 0) {
+    for (i = 0; i < frames[currentFrame].length; i++) {
+      press(frames[currentFrame][i])
+    }
+  }
+  console.log("Pasted Successfully!")
+}
+
+var counter = 1
+var playing = false
+var player = NaN
+var playBtn = document.getElementById("playBtn")
+function playButton() {
+  if (!playing) {
+    playing = true
+    counter = currentFrame
+    player = setInterval(()=>{
+      counter++
+      if (counter == frames.length) {
+        counter = 1
+      }
+      moveTo(counter)
+    }, getDelayValue())
+    playBtn.innerText = "Stop"
+    disableButtons()
+  } else {
+    playing = false
+    clearInterval(player)
+    playBtn.innerText = "Play"
+    enableButtons()
+  }
+}
+
+function disableButtons() {
+  document.getElementById("selectAllBtn").disabled = true
+  document.getElementById("selectAllBtn").style.color = "grey"
+  document.getElementById("selectAllBtn").style.borderColor = "grey"
+  document.getElementById("deselectAllBtn").disabled = true
+  document.getElementById("deselectAllBtn").style.color = "grey"
+  document.getElementById("deselectAllBtn").style.borderColor = "grey"
+  document.getElementById("addFrameBtn").disabled = true
+  document.getElementById("addFrameBtn").style.color = "grey"
+  document.getElementById("addFrameBtn").style.borderColor = "grey"
+  document.getElementById("removeFrameBtn").disabled = true
+  document.getElementById("removeFrameBtn").style.color = "grey"
+  document.getElementById("removeFrameBtn").style.borderColor = "grey"
+  document.getElementById("copyFrameBtn").disabled = true
+  document.getElementById("copyFrameBtn").style.color = "grey"
+  document.getElementById("copyFrameBtn").style.borderColor = "grey"
+  document.getElementById("pasteFrameBtn").disabled = true
+  document.getElementById("pasteFrameBtn").style.color = "grey"
+  document.getElementById("pasteFrameBtn").style.borderColor = "grey"
+  document.getElementById("generateCode").disabled = true
+  document.getElementById("generateCode").style.color = "grey"
+  document.getElementById("generateCode").style.borderColor = "grey"
+}
+
+function enableButtons() {
+  document.getElementById("selectAllBtn").disabled = false
+  document.getElementById("selectAllBtn").style.color = "white"
+  document.getElementById("selectAllBtn").style.borderColor = "white"
+  document.getElementById("deselectAllBtn").disabled = false
+  document.getElementById("deselectAllBtn").style.color = "white"
+  document.getElementById("deselectAllBtn").style.borderColor = "white"
+  document.getElementById("addFrameBtn").disabled = false
+  document.getElementById("addFrameBtn").style.color = "white"
+  document.getElementById("addFrameBtn").style.borderColor = "white"
+  document.getElementById("removeFrameBtn").disabled = false
+  document.getElementById("removeFrameBtn").style.color = "white"
+  document.getElementById("removeFrameBtn").style.borderColor = "white"
+  document.getElementById("copyFrameBtn").disabled = false
+  document.getElementById("copyFrameBtn").style.color = "white"
+  document.getElementById("copyFrameBtn").style.borderColor = "white"
+  document.getElementById("pasteFrameBtn").disabled = false
+  document.getElementById("pasteFrameBtn").style.color = "white"
+  document.getElementById("pasteFrameBtn").style.borderColor = "white"
+  document.getElementById("generateCode").disabled = false
+  document.getElementById("generateCode").style.color = "white"
+  document.getElementById("generateCode").style.borderColor = "white"
+}
+
+addFrame()
+moveTo(1)
+selectAll()
+deselectAll()
+
+var generateCodeButton = document.getElementById("generateCode")
+
+function copyCode() {
+  navigator.clipboard.writeText(document.getElementById("arduinoCode").innerText)
+  console.log("text copied")
+}
+
+
