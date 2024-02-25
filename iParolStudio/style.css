@@ -1,0 +1,55 @@
+body {
+  font-size: 1rem;
+  color: white;
+  background-color: black;
+}
+
+.overlap {
+  position: absolute;
+}
+
+.spacer {
+    padding-top: 30%;
+    margin: auto;
+}
+
+.grey {
+    background-color:darkgray;
+}
+
+.square {
+  height: 45px;
+  width: 45px;
+  background-color: black;
+  color: white;
+  font-size: 1rem;
+  border: 5px solid white;
+  border-radius: 10px;
+}
+
+.square:hover {
+    border-color: green;
+}
+
+.rect {
+  height: 45px;
+  color: white;
+  font-size: 1rem;
+  border: 5px solid white;
+  background-color: black;
+  border-radius: 10px;
+}
+
+.rect:hover {
+    color: black;
+    background-color: green;
+}
+
+.text {
+  font-size: 1rem
+}
+
+@media (max-width: 700px) {
+  .spacer {
+      padding-top: 120%
+  }
