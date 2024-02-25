@@ -4,9 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Selection</title>
+    <style>
+        body{
+            background-color: black;
+        }
+
+        p {
+            color: white;
+        }
+
+        .centered {
+            position: absolute;
+            top: 90%;
+            left: 50%;
+            transform: translate(-50%, 0%);
+            text-align: center;
+        }
+
+        .logoContainer {
+            background-color: rgb(44, 44, 44);
+            border-radius: 20%;
+        }
+
+        #services {
+            position: absolute;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -40%);
+        }
+
+        #iParolStudioLogo:hover {
+            animation: hoverMouseSizeUp 0.3s ease-in-out;
+        }
+
+        @keyframes hoverMouseSizeUp {
+            0% {
+                width: 250px;
+                height: 250px;
+            }
+            50% {
+                width: 260px;
+                height: 260px;
+            }
+            100% {
+                width: 250px;
+                height: 250px;
+            }
+        }
+
+
+    </style>
 </head>
 <body>
-    <p>Developers of this website are not afilliated with Information Communication Technology High School in any way or manner.</p>
-    <a href="iParolStudio">iParol Studio</a>
+    <div id="services">
+        <div class="logoContainer">
+            <a href="iParolStudio"><img id="iParolStudioLogo" src="logo/iParolStudio.png" width="250px" height="250px"></a>
+        </div>
+    </div>
+    
+    <p class="centered" >Developers of this website are not afilliated with Information Communication Technology High School in any way or manner.</p>
 </body>
 </html>
